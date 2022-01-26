@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/pizza-styles.css">
+
+    <title>Steve's Pizza</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/pizza-slice.jpg">
+</head>
+
+<body>
+
+<!-- Start Of Main Div -->
+<div id="main" class="container">
+    <div class="jumbotron">
+        <h1 class="display-4">Steves's PizzaTheHut</h1>
+        <p class="lead">The best pizza GRC students have ever tasted!</p>
+        <hr class="my-4">
+        <p>Something Something Pizza</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Contact Us</a>
+    </div>
+
+    <!-- action: where the data will go
+         method: how it will get there ( get or post)
+    -->
+    <form id="pizza-form" action="confirm.php" method="post">
+
+        <!-- Contact Information (First Name, Last Name, Email Address)-->
+        <fieldset class="form-group">
+            <legend class="col-form-label col-sm-2 pt-0">Contact Info</legend>
+            <div class="form-group">
+                <label for="fname">First Name:</label>
+                <input type="text" class="form-control" placeholder="Enter first name" id="fname" name="fname">
+                <span class="err" id="err-fname">Please enter first name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="lname">Last Name:</label>
+                <input type="text" class="form-control" placeholder="Enter last name" id="lname" name="lname">
+                <span class="err" id="err-lname">Please enter last name</span>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email address:</label>
+                <input type="email" class="form-control" placeholder="Enter email" id="email" name="email">
+                <span class="err" id="err-email">Please enter email address</span>
+            </div>
+
+            <!-- Pickup or Delivery -->
+            <fieldset class="form-group">
+                <legend class="col-form-label col-sm-2 pt-0">Select Pickup or Delivery</legend>
+                <div class="form-check">
+                    <label class="form-check-label" for="pickup">
+                        <input type="radio" class="form-check-input" id="pickup" name="method" value="pickup"> Pickup
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label" for="delivery">
+                        <input type="radio" class="form-check-input" id="delivery" name="method" value="delivery">Delivery<br>
+                    </label>
+                </div>
+                <span class="err" id="err-method">Please select pickup or delivery</span>
+            </fieldset>
+
+            <!-- Toppings -->
+            <fieldset class="form-group">
+                    <legend class="col-form-label col-sm-2 pt-0">Select Toppings</legend>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="pepperoni" name="toppings[]">Pepperoni<br>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="green-peppers" name="toppings[]">Green Peppers<br>
+                    </label>
+                </div>
+                <div class="form-check disabled">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="mushrooms" name="toppings[]">Mushrooms<br>
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="red-peppers" name="toppings[]">Red Peppers<br>
+                    </label>
+                </div>
+                <div class="form-check disabled">
+                    <label class="form-check-label">
+                        <input type="checkbox" class="form-check-input" value="italian-sausage" name="toppings[]">Italian Sausage<br>
+                    </label>
+                </div>
+                <span class="err" id="err-toppings">Please select at least one topping</span>
+            </fieldset>
+
+            <!-- Pizza Size Select List -->
+            <fieldset class="form-group">
+                    <legend class="col-sm-2 pt-0">Pizza Size</legend>
+                <div class="form-group">
+                    <select class="form-control" id="size" name="size">
+                        <option value="none">-- Select a Size --</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                    </select>
+                </div>
+                <span class="err" id="err-size">Please select a size of pizza</span>
+            </fieldset>
+
+            <!-- Comment Box -->
+            <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment" name="comment"></textarea>
+            </div>
+
+            <!-- Mailing List -->
+        <div class="form-group form-check">
+            <label class="form-check-label">
+                <input class="form-check-input" type="checkbox" checked="checked" id="discount" name="discount">Sign me up for discounts!
+            </label>
+        </div>
+            <!-- Order Button -->
+        <button type="submit" class="btn btn-primary">Place Order</button>
+        </fieldset>
+    </form>
+    <!-- End Of Main Div -->
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="scripts/pizza.js"></script>
+</body>
+</html>
