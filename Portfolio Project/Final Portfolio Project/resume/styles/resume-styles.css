@@ -1,0 +1,76 @@
+/* || Nav bar styles */
+#active-resume{ /* Border style on nav bar for specified webpage */
+    border-bottom: 2px solid #A43820; !important;
+
+}
+
+/* || General styles */
+.resume-wrapper-inner{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/* || Resume header styles */
+.resume-section-title{
+    border-bottom-style: solid;
+    border-bottom-color: #A43820;
+    border-width: 1px;
+}
+
+.bi{
+    color: black;
+    padding-right: 5px;
+    font-size: 1.2rem;
+}
+
+.resume-header{
+    background-color: #A43820;
+}
+
+.title{
+    font-size: 1.5rem;
+}
+
+.p-4{
+    padding: 1.4rem !important;
+}
+
+a, a:hover, a:active, a:visited{
+    color: #000000;
+}
+
+/* || Resume body styles */
+.resume-section-title{
+    color: #A43820;
+}
+
+#polyclinic, #college{
+    display: contents;
+}
+
+h2{
+    font-size: 1.25rem;
+}
+
+.date{
+    float: right;
+}
+
+
+
+/* || Media and screen width styles */
+@media screen and (max-width: 910px){
+    ul.resume-social {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .resume-header .picture{
+        width: 120px;
+        border-radius: 4px;
+    }
+    .secondary-info{
+        padding-right: 50px; !important;
+    }
+}
