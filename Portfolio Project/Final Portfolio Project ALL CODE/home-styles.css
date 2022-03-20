@@ -1,0 +1,86 @@
+/* || Navbar styles */
+#active-home {
+    border-bottom: 2px solid #A43820;
+}
+
+/* || header styles */
+#header-content{
+    color: white;
+    background-color: #63cae1;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#header-content p{
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.42857143;
+    padding-top: 20px;
+}
+
+h1{
+    width: 75%;
+}
+
+#portfolio-description p{
+    text-align: left;
+}
+
+#biography p{
+    width: 80%; !important;
+}
+
+#resume-button{
+    padding:10px 20px;
+    color: white;
+    border-radius: 50px;
+    background-color: #A43820;
+}
+
+#resume-button:hover{
+    text-decoration: none;
+    background-color: #8F311C;
+}
+
+/* || Main portfolio section styles */
+#main-portfolio-section p{
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+    line-height: 1.42857143;
+}
+
+#portfolio-description span{
+    font-weight: 600;
+    color: #A43820;
+}
+
+#portfolio-container{
+    border-right: 3px solid #A43820;
+}
+
+#card-game-assignment-section,
+#magic-square-game-assignment-section,
+#polyclinic-project-section{
+    border-left: 2px solid #A43820;
+}
+
+#runtime-terrors-link{
+    font-size: small;
+    font-weight: 700;
+    color: #A43820;
+}
+
+img{
+    width: 95%;
+}
+
+
+
+
+
+
+
