@@ -1,0 +1,30 @@
+/* || Navbar styles */
+#navbar{
+    margin-bottom: 1px;
+    background-color: white;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+.nav-link{
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 0.5px;
+    line-height: 1.42857143;
+    color: black;
+}
+/* || Navbar spacing styles */
+.navbar-expand-lg .navbar-nav .nav-link{
+    margin: 1px;
+}
+
+/* || Navbar link and dropdown hover styles */
+a.nav-link:hover, a.dropdown-item:hover{
+    background-color: #A43820;
+    color: white;
+}
+
+div.dropdown-menu{
+    padding: 0; !important;
+}
