@@ -1,0 +1,115 @@
+/* || Navbar styles */
+#active-guestbook{
+    border-bottom: 2px solid #A43820;
+}
+
+/* || General styles */
+.form-group{
+    margin-bottom: 0;
+}
+
+#guestbook-form{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+}
+
+h3{
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    border-bottom: 2px solid #A43820;
+    color: #A43820;
+}
+
+.option:hover{
+    background-color: #A43820;
+    color: white;
+}
+
+label{
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    margin-top: 0.5rem;
+    margin-bottom: 0;
+}
+
+.form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #A43820;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem #dc674d;
+}
+
+.custom-select:focus{
+    border-color: #A43820;
+    outline: 0;
+    box-shadow: 0 0 0 .2rem #dc674d;
+}
+
+.option:hover::after{
+    background-color: #A43820;
+    color: white;
+}
+
+#summary-header{
+    color: #A43820;
+    border-bottom: 2px solid #A43820;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+/* || Dropdown menu styles */
+.custom-select{
+    display: block;
+}
+
+/* || Jumbotron styles */
+.jumbotron{
+    background-color: transparent !important;
+    padding: 2rem 2rem;
+}
+
+#jumbotron{
+    background-color: #A43820 !important;
+}
+
+h1, h2{
+    text-align: center;
+    color: white;
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+}
+
+.display-4{
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+/* || Inline error styling */
+.err {
+    color: darkred;
+    display: none;
+}
+
+/* || 'Email format' display styling */
+.emailFormat{
+    display: none;
+}
+
+/* || 'Other' text box styling */
+#otherMain{
+    display: none;
+}
+
+/* || Button Styling */
+.btn{
+    background-color: #A43820;
+    border-color: #A43820;
+    color: white;
+}
+
+.btn:hover, .btn:active{
+    background-color: #208ca4;
+    border-color: #208ca4;
+    color: white;
+}
+

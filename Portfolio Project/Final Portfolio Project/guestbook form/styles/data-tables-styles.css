@@ -1,0 +1,28 @@
+/* || Navbar styles */
+#active-admin{
+    border-bottom: 2px solid #A43820;
+}
+
+/* || table data styles */
+table.dataTable tbody td {
+    padding: 10px; !important;
+}
+
+/* || table header styles */
+table.dataTable thead .sorting {
+    border-top: 1px solid #A43820;
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: #A43820;
+}
+
+/* || Table data font styles */
+td{
+    font-family: 'AvenirNextLTW01-Medium', Arial, sans-serif;
+}
+
+/* || Table header border and font styles */
+th.sorting{
+
+}
